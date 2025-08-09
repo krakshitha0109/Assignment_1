@@ -18,18 +18,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="PRO CAM App"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp" />
 
         <!-- Image -->
-
-        <!-- EditText -->
-
         <ImageView
             android:id="@+id/sampleImage"
             android:layout_width="300dp"
@@ -37,10 +34,10 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/procam"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleText" />
 
+        <!-- Name Input -->
         <EditText
             android:id="@+id/nameInput"
             android:layout_width="0dp"
@@ -51,7 +48,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="24dp" />
 
-        <!-- Button -->
+        <!-- Submit Button -->
         <Button
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
@@ -62,37 +59,43 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="24dp" />
 
-        <!-- Long TextView for scroll -->
-
-
+        <!-- Long Text -->
         <TextView
             android:id="@+id/longText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:padding="16dp"
-            android:text="ProCam is a professional-grade camera app available for both iOS and Android devices, offering users enhanced control over their mobile photography and videography"
+            android:text="ProCam is a professional-grade camera app that allows users to capture stunning photos and videos.
+It includes features like manual controls, advanced filters, and editing tools.
+With ProCam, you can adjust focus, ISO, shutter speed, and white balance manually.
+The app also supports RAW image capture, providing photographers with complete creative control.
+In addition, ProCam has built-in AI enhancement modes for quick, beautiful results.
+You can share your creations instantly on social media platforms.
+Whether you're a beginner or a pro, ProCam helps you get the perfect shot every time.
+Keep scrolling to see more details...Customize Toolbar  supports RAW image capture, providing photographers with complete creative control.
+In addition, ProCam has built-in AI enhancement modes for quick, beautiful results.
+You can share your creations instantly on social media platforms.
+Whether you're a beginner or a pro, ProCam helps you get the perfect shot every time.
+Keep scrolling to see more details...Customize Toolba…"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/submitButton" />
 
-        <!-- Footer Text -->
+        <!-- Footer Text (far below for scrolling) -->
         <TextView
             android:id="@+id/footerText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Presented by RAKSHITHA  "
+            android:text="Thank You"
             android:textAlignment="center"
             android:textColor="#555555"
             android:textSize="14sp"
-            android:paddingTop="32dp"
-            android:paddingBottom="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="200dp"
             app:layout_constraintTop_toBottomOf="@id/longText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
